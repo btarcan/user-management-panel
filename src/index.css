@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	html {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply bg-neutral-50 text-neutral-900 font-sans text-base;
+	}
+
+	h1 {
+		@apply text-2xl font-bold text-neutral-800;
+	}
+	h2 {
+		@apply text-xl  font-semibold text-neutral-800;
+	}
+	h3 {
+		@apply text-lg  font-semibold text-neutral-700;
+	}
+
+	:focus-visible {
+		@apply outline-none ring-2 ring-primary-500 ring-offset-2;
+	}
+}
+
+@layer components {
+	.scrollbar-thin {
+		scrollbar-width: thin;
+		scrollbar-color: theme('colors.neutral.300') transparent;
+	}
+	.scrollbar-thin::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+	.scrollbar-thin::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	.scrollbar-thin::-webkit-scrollbar-thumb {
+		@apply bg-neutral-300 rounded-full;
+	}
+}
