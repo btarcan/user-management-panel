@@ -1,0 +1,96 @@
+import type { User } from '@/types';
+
+// Seed data used to initialize the mock API database
+export const initialUsers: User[] = [
+	{
+		id: 'u-001',
+		name: 'Ahmet Yılmaz',
+		role: 'Admin',
+		permissions: [
+			'read',
+			'write',
+			'delete',
+			'manage_users',
+			'view_reports',
+			'edit_records',
+		],
+		createdAt: '2024-01-10T08:00:00.000Z',
+	},
+	{
+		id: 'u-002',
+		name: 'Ayşe Kara',
+		role: 'Doctor',
+		permissions: ['read', 'write', 'view_reports', 'edit_records'],
+		createdAt: '2024-02-15T09:30:00.000Z',
+	},
+	{
+		id: 'u-003',
+		name: 'Mehmet Demir',
+		role: 'Patient',
+		permissions: ['read'],
+		createdAt: '2024-03-01T11:00:00.000Z',
+	},
+	{
+		id: 'u-004',
+		name: 'Fatma Çelik',
+		role: 'Doctor',
+		permissions: ['read', 'write', 'edit_records'],
+		createdAt: '2024-03-20T14:00:00.000Z',
+	},
+	{
+		id: 'u-005',
+		name: 'Ali Şahin',
+		role: 'Patient',
+		permissions: ['read'],
+		createdAt: '2024-04-05T10:15:00.000Z',
+	},
+	{
+		id: 'u-006',
+		name: 'Zeynep Arslan',
+		role: 'Admin',
+		permissions: ['read', 'write', 'delete', 'manage_users', 'view_reports'],
+		createdAt: '2024-04-12T16:00:00.000Z',
+	},
+	{
+		id: 'u-007',
+		name: 'Mustafa Öztürk',
+		role: 'Doctor',
+		permissions: ['read', 'write', 'view_reports', 'edit_records'],
+		createdAt: '2024-05-01T08:45:00.000Z',
+	},
+	{
+		id: 'u-008',
+		name: 'Elif Koç',
+		role: 'Patient',
+		permissions: ['read'],
+		createdAt: '2024-05-18T13:30:00.000Z',
+	},
+	{
+		id: 'u-009',
+		name: 'Hasan Yıldız',
+		role: 'Doctor',
+		permissions: ['read', 'write', 'edit_records'],
+		createdAt: '2024-06-03T09:00:00.000Z',
+	},
+	{
+		id: 'u-010',
+		name: 'Selin Güneş',
+		role: 'Patient',
+		permissions: ['read'],
+		createdAt: '2024-06-20T15:00:00.000Z',
+	},
+	{
+		id: 'u-011',
+		name: 'Burak Aydın',
+		role: 'Admin',
+		permissions: ['read', 'write', 'delete', 'manage_users'],
+		createdAt: '2024-07-01T10:00:00.000Z',
+	},
+	{
+		id: 'u-012',
+		name: 'Merve Polat',
+		role: 'Doctor',
+		permissions: ['read', 'write', 'view_reports'],
+		createdAt: '2024-07-15T11:30:00.000Z',
+	},
+];
