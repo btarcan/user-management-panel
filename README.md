@@ -396,3 +396,4 @@ Breakdown:
 - Feature components — ~60 min
 - Page, layout, App shell — ~30 min
 - README — ~60 min
+- Vercel deployment & build fixes — ~15 min
