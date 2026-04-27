@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
+	base: '/',
 	plugins: [react()],
 	resolve: {
 		alias: {
@@ -17,7 +18,6 @@ export default defineConfig({
 			'@tests': path.resolve(__dirname, './src/tests'),
 		},
 	},
-
 	test: {
 		globals: true,
 		environment: 'jsdom',
@@ -25,17 +25,8 @@ export default defineConfig({
 		css: false,
 	},
 	build: {
-		target: 'ES2020',
+		target: ['chrome89', 'firefox89', 'safari15'],
 		sourcemap: true,
-		rollupOptions: {
-			output: {
-				manualChunks: {
-					react: ['react', 'react-dom'],
-					redux: ['@reduxjs/toolkit', 'react-redux'],
-					headless: ['@headlessui/react'],
-				},
-			},
-		},
 	},
 	server: {
 		port: 3000,
