@@ -14,7 +14,15 @@ export default defineConfig({
 			'@store': path.resolve(__dirname, './src/store'),
 			'@utils': path.resolve(__dirname, './src/utils'),
 			'@pages': path.resolve(__dirname, './src/pages'),
+			'@tests': path.resolve(__dirname, './src/tests'),
 		},
+	},
+
+	test: {
+		globals: true,
+		environment: 'jsdom',
+		setupFiles: ['./src/tests/setup.ts'],
+		css: false,
 	},
 	build: {
 		target: 'ES2020',

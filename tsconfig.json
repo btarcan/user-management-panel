@@ -5,23 +5,18 @@
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
 		"module": "ESNext",
 		"skipLibCheck": true,
-
-		/* Bundler mode */
 		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-
-		/* Strict */
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
-
-		/* Path aliases */
+		"types": ["vitest/globals", "@testing-library/jest-dom"],
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["src/*"],
@@ -31,7 +26,8 @@
 			"@services/*": ["src/services/*"],
 			"@store/*": ["src/store/*"],
 			"@utils/*": ["src/utils/*"],
-			"@pages/*": ["src/pages/*"]
+			"@pages/*": ["src/pages/*"],
+			"@tests/*": ["src/tests/*"]
 		}
 	},
 	"include": ["src"],
