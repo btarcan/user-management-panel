@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Input, Select, Button } from '@components/ui';
 import { useUserForm } from '@hooks/useUserForm';
 import { ROLES, PERMISSIONS, PERMISSION_LABELS } from '@utils/constants';
